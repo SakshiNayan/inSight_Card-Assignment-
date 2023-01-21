@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
     <UserContextProvider>
         <Routes>
-          <Route path='/' element={<LoginPg/>}/>
+          <Route path='/login' element={<LoginPg/>}/>
           <Route path="/register" element={<RegisterPg/>}/>
-          <Route path="/body" element={<Body/>}/>
+          <Route path="/" element={<Body/>}/>
         </Routes>
     </UserContextProvider>
     </BrowserRouter>

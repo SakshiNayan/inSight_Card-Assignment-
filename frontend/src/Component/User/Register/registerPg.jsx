@@ -42,7 +42,7 @@ function RegisterPg() {
                 <div className='field'>
                     <button type="submit" className='regBtn'>Register</button>
                 </div>
-                <Link to='/' className='linksource'>Member LogIn?</Link>
+                <Link to='/login' className='linksource'>Member LogIn?</Link>
 
             </form>
 

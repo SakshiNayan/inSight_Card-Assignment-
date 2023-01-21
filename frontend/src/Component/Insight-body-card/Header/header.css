@@ -1,0 +1,23 @@
+.g-logo{
+    width: 40px;
+    margin: 10px;
+}
+nav{
+    border-bottom: 2px solid rgb(199, 198, 198);
+}
+.logo-content{
+    color: blue;
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin: 20px 20px 0px 0px;
+}
+.header-area{
+    display: flex;
+}
+.arrow{
+    font-size: 1.2vw;
+}
+.logout{
+    font-size:1.2vw;
+    font-weight: 500;
+}

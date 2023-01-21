@@ -30,7 +30,7 @@ const handleLogin =(e)=>{
                     </div>
                 <div className='login-area'>
                     <h1>Hello Again!</h1>
-                    <h6>Welcome to Analytics Here..</h6>
+                    <h4>Welcome to Analytics Here..</h4>
                     <form onSubmit={handleLogin} className="form-login">
                       <div className='field'>
                           <input className='input' type="text" required={true} onChange={(e) => { setLogin({ ...login, email: e.target.value }) }}  placeholder='User Email'/>
@@ -42,7 +42,7 @@ const handleLogin =(e)=>{
                           <div className='signin-blueline' ></div>
                       </div>
                       <div className='field'>
-                          <Link to='/body'><button type="submit" className='logBtn'>Sign In</button></Link>
+                          <button type="submit" className='logBtn'>Sign In</button>
                       </div>
                       <div className='other-line'><div className='line'></div><div><h3>OR</h3></div><div className='line'></div></div>
                       <div id='logo-icon'>

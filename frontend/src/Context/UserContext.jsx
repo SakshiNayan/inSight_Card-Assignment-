@@ -30,7 +30,7 @@ export const UserContextProvider = ({ children }) => {
                     if (!data.error) {
                         localStorage.setItem("token", data.token);
                         setUser(data.user);
-                        navigate("/body", { replace: true });
+                        navigate("/", { replace: true });
                     } else {
                         window.alert("Enter correct user or password");
                     }
@@ -58,7 +58,7 @@ export const UserContextProvider = ({ children }) => {
                 .then((data) => {
                     console.log("Success:", data);
                     if (!data.error) {
-                        navigate("/", { replace: true });
+                        navigate("/login", { replace: true });
                     }
                     else {
                         window.alert("User Already exists")
@@ -84,18 +84,18 @@ export const UserContextProvider = ({ children }) => {
             const result = await res.json();
             if (!result.error) {
                 if (
-                    location.pathname === "/" ||
+                    location.pathname === "/login" ||
                     location.pathname === "/register"
                 ) {
                     setTimeout(() => {
-                        navigate("/body", { replace: true });
+                        navigate("/", { replace: true });
                     }, 100);
                 } else {
                     navigate(location.pathname ? location.pathname : "/");
                 }
                 setUser(result);
             } else {
-                navigate("/", { replace: true });
+                navigate("/login", { replace: true });
             }
         } catch (err) {
             console.log(err);
