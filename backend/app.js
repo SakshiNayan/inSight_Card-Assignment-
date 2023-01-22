@@ -5,6 +5,7 @@ require("dotenv").config();
 
 const app = express()
 app.use(cors())
+//body -parser
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
@@ -12,6 +13,7 @@ const userControl = require('./Routes/log-reg')
 app.use("/user", userControl)
 
 
+//mongoDb conection
 mongoose.connect("mongodb://localhost/Insight-card",(data)=>{
     console.log("Successfully connect to db")
 },(err)=>{

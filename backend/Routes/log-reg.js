@@ -7,6 +7,7 @@ const authCheck = require("../middleware/authCheck")
 
 const router = express.Router();
 
+//checking user by email of its existence
 const checkTheUser = async (email) => {
 
     const data = await UserModel.findOne({ email });
@@ -28,6 +29,7 @@ router.post("/register", async (req, res) => {
         if (userExist) {
             res.status(400).send({ error: "This email already exists, try using any other email." });
         } else {
+            //salt and hash value added to a password for security
             const salt = bcrypt.genSaltSync(parseFloat(process.env.SALT));
             const passwordHash = bcrypt.hashSync(password, salt);
 
