@@ -1,6 +1,6 @@
 import React from 'react'
 import Content from './Content-header/content'
-//import BarChart from './BarChart'
+import BarChart from '../Insight-body-card/Chart/BarChart'
 import { Header } from './Header/header'
 import TableCard from './Insight-table/table'
 
@@ -9,8 +9,9 @@ const Body = () => {
     <div>
       <Header/>
       <Content/>
-      {/* <BarChart/> */}
+      
       <TableCard/>
+      <BarChart/>
     </div>
   )
 }
