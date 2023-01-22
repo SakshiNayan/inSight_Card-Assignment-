@@ -4,6 +4,10 @@
 }
 nav{
     border-bottom: 2px solid rgb(199, 198, 198);
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    margin-top: -30px;
 }
 .logo-content{
     color: blue;

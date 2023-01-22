@@ -8,7 +8,7 @@
 #pg-area{
     display: flex;
     justify-content: center;
-    height: 930px;
+    height: 850px;
     background-image: linear-gradient(to bottom left, white, grey);
     
 }
@@ -22,12 +22,12 @@ justify-content:center;
     width: 50%;
 }
 .front-img{
-    height: 850px;
-    width: 670px;
+    height: 800px;
+    width: 660px;
     border-radius: 10px;
 }
 .not-reg{
-    margin-top: 25px;
+    margin-top: 30px;
     float: right;
     width: max-content;
     text-align: center;
@@ -36,6 +36,9 @@ justify-content:center;
     margin: 0 50px 0 0;
     font-size: 1vw;
     font-weight: bold;
+}
+.text2{
+    margin-right: 7pc;
 }
 .eye-lash{
     margin-left: -20px;
@@ -46,12 +49,16 @@ justify-content:center;
     margin-left: 30px;
     text-align: center;
     background-color: rgb(233, 232, 232);
-    width: 600px;
+    width: 580px;
     border-radius: 6px;
-    padding: 30px 0 180px  0;
+    padding: 30px 0 120px  0;
     box-shadow: 0 7px 10px 7px rgba(12, 0, 0, 0.2), 0 6px 20px 0 rgba(12, 0, 0, 0.2);
 }
 .input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: larger;
     border: none;
     margin-top: 5px;
     background-color:rgb(233, 232, 232);
@@ -60,10 +67,10 @@ justify-content:center;
     /* display: flex; */
 
     width: 300px;
-    height: 2px;
+    height: 1.5px;
     background-color: #5861AE;
     opacity: 1;
-    margin: 12.22px 150px;
+    margin: 12.22px 145px;
 }
 .form-login{
     margin-top: 50px;
@@ -84,7 +91,7 @@ justify-content:center;
 }
 .line{
     width: 150px;
-    height: 3px;
+    height: 2px;
     background-color: grey;
     opacity: 1;
     margin-top: 35px;
@@ -102,4 +109,7 @@ justify-content:center;
 }
 #logo-icon img{
     margin: 35px 20px 0 20px;
+}
+#logo-icon img:hover{
+    cursor: pointer;
 }

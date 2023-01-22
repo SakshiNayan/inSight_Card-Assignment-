@@ -43,10 +43,10 @@ const pdata = [
 
 function BarChart(){
   return(
-    <>
-    <h1 className="text-heading">
-              Line Chart Using Rechart
-          </h1>
+    <div style={{paddingBottom:"80px"}}>
+    <h2 className="text-heading" style={{marginLeft :"250px" , paddingBottom:"30px", marginTop:"80px"}}>
+              Insight Line Graph
+          </h2>
           <ResponsiveContainer width="90%" aspect={3}>
               <LineChart data={pdata} margin={{ right: 300, left: 200 }}>
                   <CartesianGrid />
@@ -59,8 +59,8 @@ function BarChart(){
                       stroke="blue" activeDot={{ r: 8 }} />
                   
               </LineChart>
-          </ResponsiveContainer>
-    </>
+          </ResponsiveContainer >
+    </div>
   )
 }
  export default BarChart

@@ -3,6 +3,7 @@ import { useState, useContext } from 'react';
 import './login.css'
 import { Link } from 'react-router-dom';
 import UserContext from '../../../Context/UserContext'
+import CopyRight from '../../Footer/footer';
 
 function LoginPg() {
   const [login, setLogin] = useState({
@@ -55,6 +56,7 @@ const handleLogin =(e)=>{
                 </div>
             </div>
         </div>
+        <CopyRight/>
     </div>
   )
 }

@@ -9,19 +9,17 @@
     opacity: 0.5;
 }
 .reg-card{
-    box-shadow: 0 7px 10px 7px rgba(12, 0, 0, 0.2), 0 6px 20px 0 rgba(12, 0, 0, 0.2);
+    box-shadow: 0 7px 10px 7px rgba(145, 63, 5, 0.397), 0 6px 20px 0 rgba(12, 0, 0, 0.2);
     text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     position: absolute;
     top: 150px;
-    left: 250px;
+    left: 450px;
     width: 900px;
     height: 630px;
-    background: #0b183f 0% 0% no-repeat padding-box;
-    /* opacity: 0.6; */
+    /* background: #0b183f 0% 0% no-repeat padding-box; */
+    background-image: linear-gradient(to bottom right, #04133f, rgb(102, 102, 102));
     color: aliceblue;
+    border-radius: 5px;
 }
 /* .avatar{
     border-radius: 100px;
@@ -31,11 +29,14 @@
 .field{
     margin-top: 10px;
 }
-input{
-    width: 300px;
+#input1{
+    width: 350px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: larger;
+}
+input[type]{
+    padding: 0 0 0 10px;
 }
 /* input::type{
     margin-left: 10px;
